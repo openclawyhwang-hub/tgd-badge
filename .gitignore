@@ -5,4 +5,5 @@ dist/
 build/
 .venv/
 .pytest_cache/
-*.svg
+# Ignore generated example SVGs (keep manually created ones)
+example-*.svg
