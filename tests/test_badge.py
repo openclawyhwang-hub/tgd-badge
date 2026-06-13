@@ -1,6 +1,5 @@
 """RED: Write failing tests for badge SVG renderer."""
 
-import pytest
 from tgd_badge.badge import render_badge, STYLES
 
 

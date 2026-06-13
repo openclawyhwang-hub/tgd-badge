@@ -89,7 +89,6 @@ def render_badge(
     label_w = _get_width(label)
     message_w = _get_width(message)
     total_w = label_w + message_w
-    spacing = 0  # no gap between rects
 
     # Build SVG parts
     parts = []
@@ -134,8 +133,8 @@ def render_badge(
     text_x = _PADDING_X
     text_y = height // 2 + 1
     parts.append(
-        f'  <g clip-path="url(#l-clip)" fill="#fff" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" '
-        f'font-size="11" font-weight="400">'
+        '  <g clip-path="url(#l-clip)" fill="#fff" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" '
+        'font-size="11" font-weight="400">'
     )
     parts.append(
         f'    <text x="{text_x}" y="{text_y}" fill="#fff" '
@@ -159,8 +158,8 @@ def render_badge(
     # Message text
     msg_x = label_w + _PADDING_X
     parts.append(
-        f'  <g clip-path="url(#r-clip)" fill="#fff" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" '
-        f'font-size="11" font-weight="400">'
+        '  <g clip-path="url(#r-clip)" fill="#fff" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" '
+        'font-size="11" font-weight="400">'
     )
     parts.append(
         f'    <text x="{msg_x}" y="{text_y}" fill="#fff" '

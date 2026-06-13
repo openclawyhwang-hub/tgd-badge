@@ -5,7 +5,7 @@ import sys
 
 from . import __version__
 from .badge import render_badge
-from .colors import resolve_color, list_colors
+from .colors import list_colors
 
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
